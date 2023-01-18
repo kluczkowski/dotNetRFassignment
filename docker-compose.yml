@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+
+  frontend:
+    build: ./frontend
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
+
+  backend:
+    build: ./backend
+    container_name: api
+    volumes:
+      - ./backend:/app
+    ports:
+      - "5050:5050"
+      - "5060:5060"
+    # depends_on:
+    #   - db
+    restart: on-failure
+
+  # db:
+  #   image: "mcr.microsoft.com/mssql/server"
+  #   container_name: db
+  #   restart: always
+  #   environment:
+  #     MSSQL_SA_PASSWORD: "SuperSecurePassword123!"
+  #     SA_PASSWORD: "SuperSecurePassword123!"
+  #     ACCEPT_EULA: "Y"
