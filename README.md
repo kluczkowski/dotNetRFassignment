@@ -18,7 +18,8 @@ Your submission will be evaluated along the following criteria by the Reviewer
 - Completeness - Does your submission meet the Application Requirements and Deliverables specified above?
 - Testing - evaluate your use of test coverage to allow for iterative development
 - Ease of setup - how easy was it for the Reviewer to setup and run your app
-- Front end design - what is your familiarity with html, css, and front-end javascript frameworks; how thoroughly did you consider the User Experience for this application?
+- (Optional, some positions are striclty backend) Front end design - what is your familiarity with html, css, and front-end javascript frameworks; how thoroughly did you consider the User Experience for this application?
+- If there is no any frontend, comment it out from dockerfile and supply us with proper testing method in `Makefile` AND/OR some `Postman/Swagger` recipes.  
 - Technical design - separation of concerns, adherence to certain 12 factor App principles, knowledge of backend frameworks, security concerns, etc.
 
 ### Notes:  
